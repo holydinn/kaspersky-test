@@ -1,0 +1,41 @@
+@import "../../fonts/fonts.css";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  padding: 7px 40px;
+  width: 412px;
+  height: 40px;
+  background: #FFE810;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Kaspersky-Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+}
+.btn-link, .btn-link:visited, .btn-link:focus, .btn-link:hover{
+  text-decoration: none;
+  color: #1D1D1B;
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 300px;
+    padding: 0;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn{
+    margin: 39px auto 0 ;
+    width: 285px;
+    padding: 0;
+
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../fonts/fonts.css";
+
+.tabs {
+  display: flex;
+  margin: 24px 0 0 0;
+}
+
+.tabs.mobile {
+  display: none;
+}
+
+.tab {
+  padding: 0;
+  width: 83px;
+  height: 69px;
+  margin-right: 32px;
+  border: none;
+  background: transparent;
+}
+.tab:hover{
+  cursor: pointer;
+}
+
+.tab-img {
+  display: block;
+  align-items: center;
+}
+
+.tab-name {
+  margin: 0;
+  font-family: 'Kaspersky-Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  justify-content: center;
+  color: #1D1D1B;
+  padding-bottom: 12px;
+}
+
+.tab.active > .tab-divider {
+  height: 4px;
+  background: #00A88E;
+}
+
+.tab.active > .tab-name {
+  color: #00A88E;
+}
+.tab-name.dark{
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .tab {
+    margin-right: 44.4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tab {
+    margin-right: 7px;
+  }
+
+  .tab-name {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tabs.ordinary {
+    display: none;
+  }
+  .tabs.mobile {
+    display: flex;
+  }
+  .select {
+    margin: 0 auto;
+    position: relative;
+    width: 312px;
+    height: 48px;
+  }
+  .select.is-active .select-body {
+    display: block;}
+
+  .select-header {
+    background-color:#fff ;
+    border: 1px solid #23D1AE;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .select-current {
+    font-family: 'Kaspersky-Sans', sans-serif;
+    font-size: 16px;
+    padding: 14px 98px 14px 8px;
+
+  }
+  .select-icon {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 21px;
+    text-align: center;
+  }
+  .select-body {
+    border: 1px solid #23D1AE;
+    z-index: 1;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-bottom: 290px;
+  }
+  .select-item {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    background: #fff;
+  }
+
+  .select-item:hover {
+    color: #00A88E;
+  }
+}
